@@ -1,0 +1,9 @@
+services:
+  internet-clipboard-largefile:
+    build: .
+    container_name: internet-clipboard-largefile
+    restart: unless-stopped
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./data:/data
